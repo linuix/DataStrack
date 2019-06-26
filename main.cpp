@@ -1,12 +1,14 @@
 #include <iostream>
-#include "list/link_list.h"
+#include "list/array_list.h"
 
 
 int main() {
-    std::cout << "--------------start---------------" << std::endl;
-    link_list link_list1;
-    link_list1.simple_sort();
-//    link_list1.out_print();
-    std::cout << "--------------end---------------" << std::endl;
+
+    int a[] = {3,4,6,30,1,2};
+
+    array_list *l1;
+    l1 = new array_list(a,6);
+    l1->insertSort();
+    l1->printAll();
     return 0;
 }

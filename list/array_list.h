@@ -6,8 +6,25 @@
 #define DATASTRACK_ARRAY_LIST_H
 
 
-class array_list {
+#include "list.h"
 
+class array_list : virtual public list{
+
+private:
+    int *data;
+    int length;
+
+
+
+public:
+    array_list(int *data, int length);
+    ~array_list();
+
+public:
+
+    void insertSort();
+    void printAll();
+    int say_hello();
 };
 
 

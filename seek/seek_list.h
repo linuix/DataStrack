@@ -7,7 +7,7 @@
 
 
 class seek_list {
-
+public:
 };
 
 
