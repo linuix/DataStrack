@@ -4,11 +4,11 @@
 
 int main() {
 
-    int a[] = {3,4,6,30,1,2};
+    int a[] = {3,4,6,30,1,2,10,8};
 
     array_list *l1;
-    l1 = new array_list(a,6);
-    l1->insertSort();
+    l1 = new array_list(a,8);
+    l1->insertSort2();
     l1->printAll();
     return 0;
 }

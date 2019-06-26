@@ -22,9 +22,16 @@ public:
 
 public:
 
+    /**
+     * 简单插入排序
+     */
     void insertSort();
+    void insertSort2();
     void printAll();
     int say_hello();
+
+public:
+    void move(int start, int end, int offset);
 };
 
 

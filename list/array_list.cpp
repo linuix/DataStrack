@@ -47,4 +47,33 @@ void array_list::printAll() {
 
 }
 
+void array_list::insertSort2() {
+    for (int i = 1; i < length; i++) {
+        for (int j = 0; j < i; j++) {
+            int temp = data[i];
+            if (temp<data[j]){
+                move(j,i-1,1);
+                data[j] = temp;
+            }
+        }
+    }
+
+}
+
+void array_list::move(int start, int end, int offset) {
+    int i;
+    if (offset>0){
+        i = end;
+    } else if (offset<0){
+        i = start;
+    } else {
+        return;
+    }
+
+    for (;offset >= 0?i >= start:i<end; offset>0?i--:i++) {
+        data[i+offset] = data[i];
+    }
+
+}
+
 
