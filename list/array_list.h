@@ -23,10 +23,17 @@ public:
 public:
 
     /**
-     * 简单插入排序
+     * 快速排序
+     */
+    void firstSort();
+    /**
+     * 插入排序
      */
     void insertSort();
-    void insertSort2();
+    /**
+     * 折半插入排序
+     */
+     void binSort();
     void printAll();
     int say_hello();
 

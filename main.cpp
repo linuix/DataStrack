@@ -8,7 +8,7 @@ int main() {
 
     array_list *l1;
     l1 = new array_list(a,8);
-    l1->insertSort2();
+    l1->binSort();
     l1->printAll();
     return 0;
 }
