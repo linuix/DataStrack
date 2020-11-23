@@ -5,15 +5,15 @@
 #include "list.h"
 
 list::list() {
-    log("list constructor\n");
+    LOGD("list constructor\n");
 }
 
 list::~list() {
-    log("list destructor\n");
+    LOGD("list destructor\n");
 
 }
 
 int list::say_hello() {
-    log("list say_hello\n");
+    LOGD("list say_hello\n");
     return 0;
 }

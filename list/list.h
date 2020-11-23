@@ -6,6 +6,8 @@
 #define DATASTRACK_LIST_H
 
 #include "stdio.h"
+#include <log_util.h>
+#include<string.h>
 
 class list {
 protected:
