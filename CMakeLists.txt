@@ -25,7 +25,10 @@ add_executable(DataStrack
         list/array_list.cpp
         list/array_list.h
         list/list.cpp
-        list/list.h)
+        list/list.h
+        tree/tree.h
+        tree/tree.cpp
+        )
 
         
 project(test_list)

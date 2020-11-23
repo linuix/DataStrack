@@ -3,6 +3,7 @@
 #include "sort/sort_list.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include "tree/tree.h"
 
 int main()
 {
@@ -22,7 +23,11 @@ int main()
     // memset(data1, 0, sizeof(data1) / sizeof(int));
     // sort_byte(data1, 0, sizeof(data1) / sizeof(int));\
 
-    sort_a_z();
+    // sort_a_z();
+
+    tree *root = create_root_tree("root",4);
+    create_child(root,"child1",6);
+    out_tree(root);
 
     return 0;
 }

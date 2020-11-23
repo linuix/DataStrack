@@ -75,6 +75,10 @@ void all_sort(int start, int end, int data[])
     }
 }
 
+void all_sort_tree(int start, int end, int data)
+{
+}
+
 void swap(int i1, int i2, int data[])
 {
     int tmp = data[i1];
