@@ -6,8 +6,13 @@
 #define DATASTRACK_LINK_LIST_H
 
 #include "iostream"
+#include <stdio.h>
+#include <stdlib.h>
+
 
 using namespace std;
+
+#define DEFAULT_LENGTH 9
 
 class link_list {
 private:

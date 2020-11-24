@@ -11,6 +11,8 @@
 
 #define NUMBER 26
 
+ void sort_all_number(int data[], int length);
+
 void out_data(int data[], int length);
 void all_sort(int start,int end,int data[]);
 void swap(int i1, int i2,int data[]);

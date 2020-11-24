@@ -30,7 +30,7 @@ void link_list::out_print() {
 
 
 link_list::link_list() {
-    data_array = static_cast<int *>(malloc(9));
+    data_array = (int*)malloc(DEFAULT_LENGTH*sizeof(int));
 }
 
 

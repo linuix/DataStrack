@@ -7,6 +7,7 @@
 #include <math.h>
 #include "log_util.h"
 #include <set>
+#include <stdio.h>
 
 using namespace std;
 
@@ -58,13 +59,13 @@ int main()
 
     getStrForList(lis);
 
-    set<int, less<int>> ssr;
+    set<int, less<int> > ssr;
 
     ssr.insert(100);
     ssr.insert(3);
     ssr.insert(4);
     ssr.insert(2);
-    for (auto itr = ssr.cbegin(); itr != ssr.cend(); itr++){
+    for (set<int, less<int> >::iterator itr = ssr.begin(); itr != ssr.end(); itr++){
         LOGD("%d",*itr);
     }
 

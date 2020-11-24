@@ -20,15 +20,16 @@ tree *create_child(tree *parent,const char *node, int length)
     parent->child_number++;
     if (parent->child != NULL)
     {
-        parent->child = (tree *)realloc(parent, parent->child_number * sizeof(tree));
+        parent->child = (tree *)realloc(parent->child, parent->child_number * sizeof(tree));
     }
     else
     {
         parent->child = (tree *)malloc(sizeof(tree));
     }
-    parent->child[parent->child_number--] = *child_tree;
+    parent->child[parent->child_number-1] = *child_tree;
+    free(child_tree);
 
-    return parent;
+    return parent->child+parent->child_number-1;
 }
 
 void out_tree(tree *root)

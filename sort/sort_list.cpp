@@ -75,6 +75,27 @@ void all_sort(int start, int end, int data[])
     }
 }
 
+
+void sort_all_number(int data[], int length)
+{
+
+    for (int i = 0; i < pow(length, length); i++)
+    {
+        // for (int j = 0; j < length; j++)
+        // { //位数
+        // }
+        int tmp = i;
+        int j = 0;
+        while (j < length)
+        {
+            printf("\t%d", data[tmp % length]);
+            tmp = tmp / 3;
+            j++;
+        }
+        printf("\n");
+    }
+}
+
 void all_sort_tree(int start, int end, int data)
 {
 }

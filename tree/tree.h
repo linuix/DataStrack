@@ -13,6 +13,10 @@ struct tree
 
 tree *create_root_tree(const char *node, int length);
 
+/**
+ * 创建节点
+ * 
+ * */
 tree *create_child(tree *t,const char *node, int length);
 
 void out_tree(tree *root);

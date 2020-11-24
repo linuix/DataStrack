@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "tree/tree.h"
+#include <string.h>
 
 int main()
 {
@@ -25,8 +26,11 @@ int main()
 
     // sort_a_z();
 
-    tree *root = create_root_tree("root",4);
-    create_child(root,"child1",6);
+    tree *root = create_root_tree("root", 4);
+    create_child(root, "child1", 6);
+    create_child(root, "child2", 6);
+    create_child(create_child(root, "child3", 6), "child4", 6);
+
     out_tree(root);
 
     return 0;
