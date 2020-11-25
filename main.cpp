@@ -1,4 +1,3 @@
-#include <iostream>
 #include "list/array_list.h"
 #include "sort/sort_list.h"
 #include <stdio.h>

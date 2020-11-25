@@ -12,8 +12,8 @@ set(EXECUTABLE_OUTPUT_PATH ./out/${PROJECT_NAME}/execute)
 
 include_directories(./comm/include/)
 include_directories(./sort)
+include_directories(.)
 
-add_compile_options(-ld)
 add_executable(DataStrack
         main.cpp
         list/link_list.cpp

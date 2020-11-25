@@ -76,7 +76,7 @@ void all_sort(int start, int end, int data[])
 }
 
 
-void sort_all_number(int data[], int length)
+void all_sort_number(int data[], int length)
 {
 
     for (int i = 0; i < pow(length, length); i++)
@@ -96,8 +96,9 @@ void sort_all_number(int data[], int length)
     }
 }
 
-void all_sort_tree(int start, int end, int data)
+void all_sort_tree(int start, int end, int data[])
 {
+    
 }
 
 void swap(int i1, int i2, int data[])
