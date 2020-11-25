@@ -12,7 +12,7 @@ tree *create_root_tree(const char *node, int length)
     return root;
 }
 
-tree *create_child(tree *parent,const char *node, int length)
+tree *create_child(tree *parent, const char *node, int length)
 {
     tree *child_tree = NULL;
     child_tree = create_root_tree(node, length);
@@ -26,10 +26,19 @@ tree *create_child(tree *parent,const char *node, int length)
     {
         parent->child = (tree *)malloc(sizeof(tree));
     }
-    parent->child[parent->child_number-1] = *child_tree;
+    parent->child[parent->child_number - 1] = *child_tree;
     free(child_tree);
 
-    return parent->child+parent->child_number-1;
+    return parent->child + parent->child_number - 1;
+}
+
+void create_tree(tree *root, char **data, int size, int length)
+{
+    if (size <= 0)
+    {
+        create_child(root,data[size],length);
+    }
+    
 }
 
 void out_tree(tree *root)
@@ -43,8 +52,7 @@ void out_tree(tree *root)
     {
         for (size_t i = 0; i < root->child_number; i++)
         {
-            out_tree(root->child+i);
+            out_tree(root->child + i);
         }
-        
     }
 }

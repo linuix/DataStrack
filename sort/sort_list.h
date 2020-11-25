@@ -8,7 +8,7 @@
 #include <string.h>
 #include <stdio.h>
 #include <math.h>
-#include "tree/tree.h"
+#include "../tree/tree.h"
 
 #define NUMBER 26
 
@@ -21,8 +21,7 @@ void sort_byte(int data[], int start, int end);
 void conver(int data[], int start);
 void sort_a_z();
 void out_a_z(int data);
-void all_sort_tree(int start, int end, int data[]);
-
+void all_sort_tree(int start, int end, char data[]);
 
 
 class Sorter

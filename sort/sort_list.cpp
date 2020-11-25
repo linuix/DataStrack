@@ -96,10 +96,17 @@ void all_sort_number(int data[], int length)
     }
 }
 
-void all_sort_tree(int start, int end, int data[])
+void all_sort_tree(int start, int end, char data[])
 {
+    //创建全排列树
+    tree *root = create_root_tree("root",4);
+    
     
 }
+
+
+
+
 
 void swap(int i1, int i2, int data[])
 {
