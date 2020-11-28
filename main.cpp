@@ -25,12 +25,17 @@ int main()
 
     // sort_a_z();
 
-    tree *root = create_root_tree("root", 4);
-    create_child(root, "child1", 6);
-    create_child(root, "child2", 6);
-    create_child(create_child(root, "child3", 6), "child4", 6);
+    tree_c *root = create_tree_node_c("");
+    char data_c[3] = {'a','b','c'};
+    // create_child(root, "child1", 6);
+    // create_child(root, "child2", 6);
+    // create_child(create_child(root, "child3", 6), "child4", 6);
 
-    out_tree(root);
+    create_all_sort_tree_BF_c(root, data_c, 0, sizeof(data_c));
+
+    out_tree_c(root);
+    LOGD("---------------------------------------------");
+    out_tree_depth_first_c(root);
 
     return 0;
 }
