@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.9.2)
 
 include_directories(./comm/include)
 add_subdirectory(./tree)
+add_subdirectory(./test)
 
 
 # project(DataStrack)
