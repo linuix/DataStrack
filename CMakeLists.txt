@@ -14,6 +14,8 @@ include_directories(./comm/include/)
 include_directories(./sort)
 include_directories(.)
 
+add_subdirectory(./cycle_buffer)
+
 add_executable(DataStrack
         main.cpp
         list/link_list.cpp
